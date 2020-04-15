@@ -3,7 +3,7 @@
 def line(array) 
   
   if array.empty?
-    "The line is currently empty."
+    puts "The line is currently empty."
   else
     str = "The line is currently:"
     array.each_with_index do |name, i|
