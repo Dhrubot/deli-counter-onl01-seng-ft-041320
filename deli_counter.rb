@@ -2,12 +2,16 @@
 
 def line(array) 
   
-  puts "The line is currently empty." unless !array.empty?
-  
-  str = "The line is currently:"
-  array.each_with_index do |name, i|
-    str << " #{i +1}. #{ name }"
+  if array.empty?
+    
+    "The line is currently empty."
+  else
+    str = "The line is currently:"
+    array.each_with_index do |name, i|
+      str << " #{i +1}. #{ name }"
+    end
   end
+  
   puts str
 end
   
