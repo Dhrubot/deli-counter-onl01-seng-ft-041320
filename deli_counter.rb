@@ -6,7 +6,7 @@ def line(array)
   
   str = "The line is currently:"
   array.each_with_index do |name, i|
-    str << " #{i +1}. #{ name } "
+    str << " #{i +1}. #{ name }"
   end
   str
 end
