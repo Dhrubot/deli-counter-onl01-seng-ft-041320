@@ -1,6 +1,8 @@
 # Write your code here.
 
 def line(array) 
-  The line is currently: 1. Ada 2. Grace 3. Kent
+  array.each_with_index do |name, i|
+    "The line is currently: #{i +1}. #{ name }Ada 2. Grace 3. Kent"
+  end
 end
   
